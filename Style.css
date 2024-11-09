@@ -1,0 +1,374 @@
+/* General Styles */
+.col-1 { width: 8.33%; }
+.col-2 { width: 16.66%; }
+.col-3 { width: 25%; }
+.col-4 { width: 33.33%; }
+.col-5 { width: 41.66%; }
+.col-6 { width: 50%; }
+.col-7 { width: 58.33%; }
+.col-8 { width: 66.66%; }
+.col-9 { width: 75%; }
+.col-10 { width: 83.33%; }
+.col-11 { width: 91.66%; }
+.col-12 { width: 100%; }
+
+body, html {
+    margin-top: 20px;
+    font-family: Arial, sans-serif;
+    background-color: #fdf9ef;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+/* Header Styles */
+header {
+    width: 100%;
+    background-color: #45474B;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    height: 30px;
+        flex-wrap: wrap; 
+    z-index: 999;
+
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #fdf9ef;
+    z-index: 1000;
+}
+
+h1, h2 {
+    color: #2d2c2a;
+    text-align: center;
+}
+
+.nav a, .auth a {
+    color: #fdf9ef;
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 20px;
+    display: inline-block;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('image/pexels-heyho-8146198.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.overlay {
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 50px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.overlay a:hover, .properties a:hover {
+    background-color: rgba(233, 225, 225, 0.5);
+    color: white;
+}
+
+.search-options {
+    align-items: center;
+    text-align: center;
+}
+
+.search-options a {
+    width: 30px;
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #5c6169;
+    color: #fdf9ef;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Description Section */
+.des-text {
+    text-align: justify;
+    padding: 10px;
+    letter-spacing: 1px;
+    font-size: 20px;
+}
+
+.des-text p{
+    color: #2d2c2a;
+    text-align: justify;
+    text-indent: 50px;
+}
+
+/* Featured Properties Section */
+.featured-properties {
+    padding: 50px;
+    text-align: center;
+}
+
+.featured-properties h2 {
+    font-size: 30px;
+}
+
+.properties {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 20px;
+}
+
+.property {
+    width: 200px;
+    padding: 20px;
+    margin-left: 10px;
+    background-color: #fdf9ef;
+    border: 1px solid #45474B;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    color: #45474B;
+    font-weight: bold;
+    font-size: 20px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#prop1 {
+    background-image: url('/image/condo.jpg');
+}
+
+#prop2 {
+    background-image: url('/image/konkat.jpg');
+}
+
+#prop3 {
+    background-image: url('/image/apartment.webp');
+}
+
+/* Footer Styles */
+footer {
+    background-color: #45474B;
+    padding: 20px;
+    color: #fdf9ef;
+    width: 100%;
+}
+
+footer h2, p{
+    color: #f9f9f9;
+    text-align: center;
+}
+
+/* Contact Section */
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Listing Styles */
+.listing-container {
+    display: flex;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #ffffff;
+    overflow: hidden;
+    max-width: 100%;
+    margin-top: 20px;
+}
+
+.listing-image {
+    flex: 40%;
+    position: relative;
+}
+
+.listing-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.listing-info {
+    flex: 40%;
+    padding: 2%;
+}
+
+.listing-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 4%;
+}
+
+.listing-header h1 {
+    font-size: 1.5em;
+    margin: 0;
+}
+
+.listing-price {
+    font-size: 1.3em;
+    color: #333;
+}
+
+.listing-details {
+    font-size: 1.2em;
+    color: #000000;
+    margin-bottom: 4%;
+}
+
+.listing-details p {
+    margin: 1% 0;
+    text-decoration: none;
+    color: #000000;
+    text-align: left;
+}
+
+.contact-button {
+    background-color: #0d841d;
+    color: #fff;
+    padding: 1% 2%;
+    border: none;
+    border-radius: 4%;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.contact-button:hover {
+    background-color: #2d2c2a;
+}
+
+.contact-info {
+    margin-top: 6%;
+    font-size: 1.3em;
+    color: #202020;
+}
+
+/* Miscellaneous */
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+img {
+    max-width: 100%;
+}
+
+.section {
+    margin-bottom: 20px;
+}
+
+.section h3 {
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.section li {
+    font-size: 20px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.section li i {
+    margin-right: 10px;
+}
+
+/* Property Card */
+.container {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    width: 100%;
+    max-width: 1200px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.property-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 350px;
+    overflow: hidden;
+    text-align: center;
+    
+}
+.property-card h3{
+    font-size: 30px;
+}
+
+.property-card img{
+    size: 100%;
+    align-items: center;
+}
+.property-image {
+    width: 100%;
+    height: auto;
+}
+
+.property-details {
+    padding: 20px;
+}
+
+.property-details h3 {
+    margin: 10px 0;
+    font-size: 1.5em;
+}
+
+.property-details p {
+    color: #555;
+    margin: 5px 0;
+}
+
+.property-features {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.feature {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.feature p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.feature p:last-child {
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #333;
+}
+.contact-us p{
+    text-align: left;
+}
+
+

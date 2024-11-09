@@ -1,0 +1,39 @@
+body{
+
+    /* background-image: url('image/Khmertimes-convention-hall.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; */
+    text-align: center;
+}
+section h2{
+    
+
+    /* color: white; */
+}
+.list{
+    
+    text-align: center;
+     
+}
+.list h2{
+  
+    color:brown;
+    border: 10px sold brown;
+}
+.lists{
+    display: flex;
+    flex-direction: column;
+    
+}
+.list{
+    width:100%;
+    border: 1px red;
+    box-sizing: border-box;
+    padding-bottom: 50px;
+
+}
+
+.list li{
+    text-align: justify;
+}

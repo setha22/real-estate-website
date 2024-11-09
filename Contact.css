@@ -1,0 +1,42 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fdf9ef;
+    color: #333;
+    
+}
+.contact{
+    text-align:center;
+}
+.text{
+    padding:20px;
+    color:#0b0909;
+}
+form a{
+    background-color: #0b0909;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border: 2px solid gray;
+    border-radius: 10px  ;
+  }
+  input{
+    height: 30px;
+    width: 200px;
+    /* padding-right:100px; */
+    border-radius: 10px ;
+    /* text-align: left; */
+   
+
+  }
+  
+  a:hover, a:active {
+    background-color: rgb(251, 231, 203);
+    
+  }
+  .media p{
+    color:#0b0909;
+  }
